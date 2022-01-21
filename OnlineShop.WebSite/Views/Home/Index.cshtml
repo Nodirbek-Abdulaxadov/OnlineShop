@@ -21,7 +21,7 @@
                 <div class="box">
                     <div class="img-box">
                       <img src="@imageSource" asp-append-version="true" alt="">
-                      <a href="" class="add_cart_btn">
+                      <a asp-controller="home" asp-action="addcard" asp-route-id="@product.Id" class="add_cart_btn">
                         <span>
                           Add To Cart
                         </span>

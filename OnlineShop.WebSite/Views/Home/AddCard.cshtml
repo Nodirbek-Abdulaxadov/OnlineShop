@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Add to Card Page";
+    Layout = "_Layout";
+}
+@model Product
+<div class="container p-3 m-5" style="border: 1px solid black; border-radius: 10px;">
+    <h2>Purches now</h2>
+    <div class="container justify-content-between" style="display: flex">
+        <div style="display: inline;">
+            @{string imageSource = "~/Images/" + Model.ImageFileName;}
+            <img src="~/images/p1.png" style="width: 300px;" asp-append-version="true" alt=""/>
+        </div>
+        <div class="p-5" style="display: inline;">
+            <h4>@Model.Name</h4>
+            <h3>$ @Model.Price</h3>
+            <p>@Model.Description</p>
+            <label for="input">Count</label>
+            <input id="input" type="number" style="width: 100px;"/>
+            <a class="btn" href=""><i class="fa fa-trash" style="font-size: 1.5rem;" aria-hidden="true"></i></a>
+        <br /><br />
+        <button style="float: right;" class="btn btn-warning">Buy now</button>
+    </div>
+    </div>
+</div>
