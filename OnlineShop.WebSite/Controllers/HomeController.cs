@@ -35,10 +35,82 @@ namespace OnlineShop.WebSite.Controllers
                 new Product
                 {
                     Id = Guid.NewGuid(),
+                    Name = "Dron",
+                    Price = 500,
+                    Description = "",
+                    ImageFileName = "p3.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Kalonka",
+                    Price = 150,
+                    Description = "",
+                    ImageFileName = "p4.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Kamera",
+                    Price = 800,
+                    Description = "",
+                    ImageFileName = "p1.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
                     Name = "Joystik",
                     Price = 200,
                     Description = "",
                     ImageFileName = "p2.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Dron",
+                    Price = 500,
+                    Description = "",
+                    ImageFileName = "p3.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Kalonka",
+                    Price = 150,
+                    Description = "",
+                    ImageFileName = "p4.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Kamera",
+                    Price = 800,
+                    Description = "",
+                    ImageFileName = "p1.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Joystik",
+                    Price = 200,
+                    Description = "",
+                    ImageFileName = "p2.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Dron",
+                    Price = 500,
+                    Description = "",
+                    ImageFileName = "p3.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Kalonka",
+                    Price = 150,
+                    Description = "",
+                    ImageFileName = "p4.png"
                 }
             };
         }
