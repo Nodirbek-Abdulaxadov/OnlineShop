@@ -116,7 +116,12 @@ namespace OnlineShop.WebSite.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            if (products.Count > 9)
+            {
+                return View(products.GetRange(0, 9));
+            }
+             
+            return View(products);
         }
 
         public IActionResult About()
