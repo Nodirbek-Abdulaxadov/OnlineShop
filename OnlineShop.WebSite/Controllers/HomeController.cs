@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using OnlineShop.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,6 +11,37 @@ namespace OnlineShop.WebSite.Controllers
 {
     public class HomeController : Controller
     {
+        List<Product> products;
+        public HomeController()
+        {
+            products = new List<Product>()
+            {
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Kamera",
+                    Price = 800,
+                    Description = "",
+                    ImageFileName = "p1.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Joystik",
+                    Price = 200,
+                    Description = "",
+                    ImageFileName = "p2.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Joystik",
+                    Price = 200,
+                    Description = "",
+                    ImageFileName = "p2.png"
+                }
+            };
+        }
         public IActionResult Index()
         {
             return View();
