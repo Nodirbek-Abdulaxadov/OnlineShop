@@ -107,18 +107,27 @@ namespace OnlineShop.WebSite.Controllers
                 new Product
                 {
                     Id = Guid.NewGuid(),
-                    Name = "Kalonka",
+                    Name = "Oxirgisi",
                     Price = 150,
                     Description = "",
                     ImageFileName = "p4.png"
+                },
+                new Product
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Last",
+                    Price = 150,
+                    Description = "",
+                    ImageFileName = "p6.png"
                 }
             };
         }
+
         public IActionResult Index()
         {
             if (products.Count > 9)
             {
-                return View(products.GetRange(0, 9));
+                return View(products.GetRange(products.Count - 9, 9));
             }
              
             return View(products);
@@ -131,7 +140,7 @@ namespace OnlineShop.WebSite.Controllers
 
         public IActionResult Products()
         {
-            return View();
+            return View(products);
         }
 
         public IActionResult WhyUs()
