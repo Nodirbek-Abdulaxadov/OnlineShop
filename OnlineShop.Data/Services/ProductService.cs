@@ -20,7 +20,7 @@ namespace OnlineShop.Data.Services
 
         public Task<Product> AddProduct(Product newProduct)
         {
-            _dbContext.Products.AddAsync(newProduct);
+            _dbContext.Products.Add(newProduct);
             _dbContext.SaveChangesAsync();
             return Task.FromResult(newProduct);
         }

@@ -32,7 +32,7 @@ namespace OnlineShop.API
             services.AddScoped<IProductService, ProductService>();
 
             services.AddDbContext<ApplicationDbContext>(option =>
-                option.UseSqlServer(Configuration.GetConnectionString("LocalSqlDb")));
+                option.UseNpgsql(Configuration.GetConnectionString("PostgreDB")));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

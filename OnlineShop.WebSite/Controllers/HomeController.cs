@@ -118,10 +118,6 @@ namespace OnlineShop.WebSite.Controllers
                     ImageFileName = "p6.png"
                 }
             };
-        public HomeController()
-        {
-            
-        }
 
         public IActionResult Index()
         {
