@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace OnlineShop.API.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class ProductController : ControllerBase
     {
         private readonly IProductService _service;

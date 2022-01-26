@@ -35,7 +35,8 @@ namespace OnlineShop.Data.Services
 
         public Task<List<Category>> GetAll()
         {
-            return _dbContext.Categories.ToListAsync();
+            return _dbContext.Categories
+                .Include(p => p.Products).ToListAsync();
         }
 
         public Task<Category> GetById(Guid id)

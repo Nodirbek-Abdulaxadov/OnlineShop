@@ -30,6 +30,7 @@ namespace OnlineShop.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryService, CategoryService>();
 
             services.AddDbContext<ApplicationDbContext>(option =>
                 option.UseNpgsql(Configuration.GetConnectionString("PostgreDB")));
