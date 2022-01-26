@@ -20,5 +20,6 @@ namespace OnlineShop.Data.Models
         public string Description { get; set; }
         [Required]
         public string ImageFileName { get; set; }
+        public Guid CategoryId { get; set; }
     }
 }
