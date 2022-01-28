@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using OnlineShop.WebSite.Areas.Identity.Data;
 
-namespace OnlineShop.WebSite.Data
+namespace OnlineShop.WebSite.Areas.Identity.Data
 {
     public class OnlineShopWebSiteContext : IdentityDbContext<OnlineShopWebSiteUser>
     {

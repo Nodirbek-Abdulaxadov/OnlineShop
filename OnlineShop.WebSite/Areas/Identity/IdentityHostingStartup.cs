@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnlineShop.WebSite.Areas.Identity.Data;
-using OnlineShop.WebSite.Data;
 
 [assembly: HostingStartup(typeof(OnlineShop.WebSite.Areas.Identity.IdentityHostingStartup))]
 namespace OnlineShop.WebSite.Areas.Identity

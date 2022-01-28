@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineShop.WebSite.Data;
+using OnlineShop.WebSite.Areas.Identity.Data;
 
 namespace OnlineShop.WebSite.Migrations
 {

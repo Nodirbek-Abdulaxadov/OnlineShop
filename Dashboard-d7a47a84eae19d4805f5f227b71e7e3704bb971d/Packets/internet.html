@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style-packets.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h1><span class="la la-stream"></span><span>USSD</span></h1>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="../index.html"><span class="las la-home"></span>
+                        <span>Bosh sahifa</span></a>
+                </li>
+                <li>
+                    <a href="../company.html"><span class="las la-rss"></span>
+                        <span>Uztelecom</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-rss"></span>
+                        <span>Beeline</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-rss"></span>
+                        <span>MobiUz</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-rss"></span>
+                        <span>Ucell</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-rss"></span>
+                        <span>Perfectum Mobile</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-question-circle"></span>
+                        <span>Yordam</span></a>
+                </li>
+                <li class="out">
+                    <a href=""><span><i class="las la-arrow-circle-left"></i></span>
+                        <span>Hisobdan chiqish</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="user-wrapper">
+                <img src="../images/user.png" width="40px" height="40px" alt="" />
+                <div>
+                    <h4>Nodirbek Abdulaxadov</h4>
+                    <small>Supper admin</small>
+                </div>
+            </div>
+            <h5>
+                <a href="">O'zb</a> |
+                <a href="">Rus</a>
+            </h5>
+        </header>
+
+        <main>
+
+            <div class="row blok mt-5">
+                <div class="col-xs-11">
+                    <div class="box data-table">
+                        <div class="box-header position-relative table-header mt-2">
+                            <div class="d-flex justify-content-between mt-3 mx-4 com-header">
+                                <h3>Internet paketlari</h3>
+                                <a href="../Infos/add_packet.html">
+                                    <span class="btn btn-success"><i class="las la-plus"></i> Yangi qo'shish</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="jadval box-body table-responsive no-padding">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Title</th>
+                                    <th>Ammount</th>
+                                    <th>Price</th>
+                                    <th>Code</th>
+                                    <th>Duration</th>
+                                    <th>Description</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>Oylik paketlar</td>
+                                    <td>500 MB</td>
+                                    <td>500 Mb</td>
+                                    <td>10 000 so'm</td>
+                                    <td>*147*10072*19243#</td>
+                                    <td>30 kun</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#infoModal">Packet Info</button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="infoModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Oylik packet 500
+                                                            MB</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Internet-paketlar\" Constructor/Constructor for corporate, M2M
+                                                        Basic tarif rejalaridan tashqari barcha tarif rejalari uchun
+                                                        amal qiladi. Shu kabi paketlar Mobil Byudjet xizmatidan
+                                                        foydalanuvchilar uchun mavjud. Internet-paketlar menyusiga
+                                                        kirish uchun: *111*1*9# (o'zbek tilida ma'lumot), *111*2*9# (rus
+                                                        tilida ma'lumot) ni terish kerak. Internet-paketlar ham
+                                                        jismoniy, ham yuridik shaxslarga taqdim etiladi. Internet
+                                                        paketining amal qilish muddati ulanish vaqtidan boshlab 30 kun.
+                                                        Joriy paketni yangilash ushbu guruhdan boshqa Internet-paketni
+                                                        sotib olish yo'li bilan amalga oshiriladi. Umumiy megabaytning
+                                                        amal qilish muddati oxirgi paket xarid qilingan kundan boshlab
+                                                        (to'plamga kiritilgan Internet-trafik miqdori bo'yicha) 30 kunni
+                                                        tashkil qiladi. Internet to'plamining amal qilish muddati
+                                                        tugagach, keyingi internet-to'plamning faollashtirilmagan
+                                                        bo‘lsa, qoldiq megabaytlar saqlanmaydi. Internet-trafikni
+                                                        sarflashning ustuvorligi: 1) Bonusli Internet-to'plamlar (mavjud
+                                                        bo'lsa) 2) \"Kunlik Internet-to'plamlar\" to'plami (kunlik
+                                                        paketlar) 3) TAS-IX uchun internet-paketlar guruhi; 4) tarif
+                                                        rejasi doirasida bepul resurslar (limitlar); 5) «Internet
+                                                        non-stop» Internet-paketlar guruhi; 6) Boshqa sotib olingan
+                                                        Internet-paketlar guruhi. Boshqa turdagi paketlarni kiritish
+                                                        vaqtida xarajatlarning shartlari va ustuvorliklari qo'shimcha
+                                                        ravishda tavsiflanadi. Tarif rejasiga kiritilgan trafik yoki
+                                                        paketning amal qilish muddati tugagandan so'ng, barcha tarif
+                                                        rejalarida tariflash tarif rejasi shartlariga qarab belgilanadi.
+
+                                                        To'plam narxi: 10 000 so'm \nBerilgan trafik: 500 MB\nAmal
+                                                        qilish muddati: 30 kun\nFaollashtirish: *147*10072*19243#
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Yopish</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cell">
+                                        <a href="../Infos/internet_Info.html">
+                                            <span class="btn btn-success">Tahrirlash</span>
+                                        </a>
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                            data-bs-target="#deleteModal">O'chirish</button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="deleteModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h4>Ushbu paketni o'chirishni xohlaysizmi?</h4>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div><!-- /.box -->
+                </div>
+
+        </main>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
