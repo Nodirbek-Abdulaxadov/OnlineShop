@@ -10,6 +10,7 @@ namespace OnlineShop.Data.Services
     public interface ICategoryService
     {
         Task<List<Category>> GetAll();
+        Task<List<Category>> GetAllJson();
         Task<Category> GetById(Guid id);
         Task<Category> AddCategory(Category newCategory);
         Task<Category> UpdateCategory(Category Category);

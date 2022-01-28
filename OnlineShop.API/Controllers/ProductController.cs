@@ -24,6 +24,13 @@ namespace OnlineShop.API.Controllers
             return Ok(res);
         }
 
+        [HttpGet, Route("getall/{categoryId}")]
+        public async Task<IActionResult> GetAll(Guid categoryId)
+        {
+            var res = await _service.GetAll(categoryId);
+            return Ok(res);
+        }
+
         [HttpGet, Route("get/{id}")]
         public async Task<IActionResult> Get(Guid id)
         {

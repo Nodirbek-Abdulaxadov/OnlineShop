@@ -21,7 +21,7 @@ namespace OnlineShop.Data.Services
         public Task<Category> AddCategory(Category newCategory)
         {
             _dbContext.Categories.Add(newCategory);
-            _dbContext.SaveChangesAsync();
+            _dbContext.SaveChanges();
             return Task.FromResult(newCategory);
         }
 
@@ -34,6 +34,11 @@ namespace OnlineShop.Data.Services
         }
 
         public Task<List<Category>> GetAll()
+        {
+            return _dbContext.Categories.ToListAsync();
+        }
+
+        public Task<List<Category>> GetAllJson()
         {
             return _dbContext.Categories
                 .Include(p => p.Products).ToListAsync();

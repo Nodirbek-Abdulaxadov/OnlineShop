@@ -35,6 +35,11 @@ namespace OnlineShop.Data.Services
 
         public Task<List<Product>> GetAll() => _dbContext.Products.ToListAsync();
 
+        public Task<List<Product>> GetAll(Guid id)
+        {
+            return _dbContext.Products.Where(p => p.CategoryId == id).ToListAsync();
+        }
+
         public Task<Product> GetById(Guid id) => _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
 
         public Task<Product> UpdateProduct(Product product)

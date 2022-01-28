@@ -10,6 +10,7 @@ namespace OnlineShop.Data.Services
     public interface IProductService
     {
         Task<List<Product>> GetAll();
+        Task<List<Product>> GetAll(Guid id);
         Task<Product> GetById(Guid id);
         Task<Product> AddProduct(Product newProduct);
         Task<Product> UpdateProduct(Product product);

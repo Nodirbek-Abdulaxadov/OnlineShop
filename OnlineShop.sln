@@ -9,7 +9,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop.Data", "OnlineSh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop.WebSite", "OnlineShop.WebSite\OnlineShop.WebSite.csproj", "{CCB4193A-2366-4206-B2D1-C78BECB954DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Bot", "OnlineShop.Bot\OnlineShop.Bot.csproj", "{365F7F77-8750-4608-9082-B91A57CF4594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop.Bot", "OnlineShop.Bot\OnlineShop.Bot.csproj", "{365F7F77-8750-4608-9082-B91A57CF4594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Admin", "OnlineShop.Admin\OnlineShop.Admin.csproj", "{700273D4-DE91-481F-902A-7799F52E2C41}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Dashboard-d7a47a84eae19d4805f5f227b71e7e3704bb971d", "C:\Users\Nodirbek\Desktop\Dashboard-d7a47a84eae19d4805f5f227b71e7e3704bb971d\", "{961C87B4-AB93-4B6D-9D2D-F1E8C416F12C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57964"
+		Debug.AspNetCompiler.PhysicalPath = "C:\Users\Nodirbek\Desktop\Dashboard-d7a47a84eae19d4805f5f227b71e7e3704bb971d\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57964\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57964"
+		Release.AspNetCompiler.PhysicalPath = "C:\Users\Nodirbek\Desktop\Dashboard-d7a47a84eae19d4805f5f227b71e7e3704bb971d\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57964\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57964"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +55,14 @@ Global
 		{365F7F77-8750-4608-9082-B91A57CF4594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{365F7F77-8750-4608-9082-B91A57CF4594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{365F7F77-8750-4608-9082-B91A57CF4594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700273D4-DE91-481F-902A-7799F52E2C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700273D4-DE91-481F-902A-7799F52E2C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700273D4-DE91-481F-902A-7799F52E2C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700273D4-DE91-481F-902A-7799F52E2C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961C87B4-AB93-4B6D-9D2D-F1E8C416F12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961C87B4-AB93-4B6D-9D2D-F1E8C416F12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961C87B4-AB93-4B6D-9D2D-F1E8C416F12C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{961C87B4-AB93-4B6D-9D2D-F1E8C416F12C}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
